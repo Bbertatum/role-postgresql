@@ -54,7 +54,7 @@ Including an example of how to use your role (for instance, with variables passe
 ```yaml
 - hosts: servers
   roles:
-    - { role: leadlineit.postgresql, tags: postgresql }
+    - { role: role-postgresql, tags: postgresql }
 ```
 
 License
@@ -65,4 +65,8 @@ MIT
 Author Information
 ------------------
 
+BCE NFRANCE
+
+Source
 This role was created by Artem Kasianchuk.
+https://github.com/leadlineit/ansible-role-postgresql

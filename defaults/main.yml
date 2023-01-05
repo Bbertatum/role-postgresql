@@ -7,3 +7,14 @@ pgsql_auth_method: scram-sha-256
 pgsql_map_name: rootmap
 pgsql_map_sysuser: root
 pgsql_map_pguser: postgres
+
+# postgresql.conf variables
+lc_messages: 'C'
+shared_buffer: 512
+maintenance_work_mem: 256
+work_mem: 16
+timezone: 'Europe/Paris'
+track_activity_query_size: 4096
+log_min_duration_statement: 60000
+search_path: public
+default_text_search_config: 'pg_catalog.french'

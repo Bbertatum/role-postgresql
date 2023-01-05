@@ -21,7 +21,7 @@
     filename: postgresql
     mode: '0644'
   with_items:
-    - "deb http://apt.postgresql.org/pub/repos/apt/ {{ ansible_distribution_release }}-pgdg main"
+    - "deb http://{{ pg_repo_url | default('apt.postgresql.org/pub/repos/apt/') {{ ansible_distribution_release }}-pgdg main"
 
 - name: Install/Update PostgreSQL Server
   ansible.builtin.apt:

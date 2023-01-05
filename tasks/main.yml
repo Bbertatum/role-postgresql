@@ -1,4 +1,9 @@
 ---
+
+- name: include_vars for auriga
+  include_vars: "~/cloudstarter/inventory/group_vars/auriga_pg.yml"
+  when: type_vm == "auriga"
+
 - name: Include ./install.yml
   ansible.builtin.import_tasks: install.yml
   tags:
